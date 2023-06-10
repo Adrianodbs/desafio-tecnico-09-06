@@ -1,11 +1,12 @@
 import * as C from './style'
 import logo from '../../assets/logo.svg'
+import { ButtonStyle } from '../Button'
 
 function Header() {
   return (
     <C.Container>
       <img src={logo} alt="Logo" />
-      <button>Já sou parceiro</button>
+      <ButtonStyle>Já sou parceiro</ButtonStyle>
     </C.Container>
   )
 }

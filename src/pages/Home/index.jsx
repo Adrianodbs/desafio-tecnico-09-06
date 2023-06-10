@@ -1,5 +1,6 @@
 import * as C from './style'
 import burguer from '../../assets/burguer_2@3x.png'
+import FormStyle from '../../components/Form'
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
         Temos uma equipe ansiosa para cadastrar seus produtos no Pigz
         Marketplace e deixar sua loja prontinha para iniciar as vendas.
       </p>
+      <FormStyle />
     </C.Container>
   )
 }
