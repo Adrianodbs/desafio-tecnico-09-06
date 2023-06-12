@@ -1,11 +1,13 @@
 import Header from './components/Header'
-import Home from './pages/Home'
+import FirstSection from './pages/FirstSection'
+import SecondSection from './pages/SecondSection'
 
 function App() {
   return (
     <div>
       <Header />
-      <Home />
+      <FirstSection />
+      <SecondSection />
     </div>
   )
 }

@@ -2,7 +2,7 @@ import * as C from './style'
 import burguer from '../../assets/burguer_2@3x.png'
 import FormStyle from '../../components/Form'
 
-function Home() {
+function FirstSection() {
   return (
     <C.Container>
       <img src={burguer} alt="Burguer" className="burguer" />
@@ -18,4 +18,4 @@ function Home() {
   )
 }
 
-export default Home
+export default FirstSection
