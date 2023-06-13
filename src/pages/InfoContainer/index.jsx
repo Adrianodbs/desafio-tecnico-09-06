@@ -1,6 +1,8 @@
 import * as C from './style'
 
 import phones from '../../assets/phones.png'
+import whats from '../../assets/whats.png'
+
 import InfoCards from '../../components/InfoCards'
 
 function InfoContainer() {
@@ -33,6 +35,11 @@ function InfoContainer() {
         price="2,99% por transação"
         button="Saiba mais"
       />
+      <h6>
+        Fale com a Pigz
+        <img src={whats} alt="Whatsapp" />
+        <small>95</small>3224-2603
+      </h6>
     </C.Container>
   )
 }

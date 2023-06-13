@@ -29,6 +29,24 @@ export const Container = styled.section`
     font-size: 16px;
     font-weight: 400;
   }
+
+  h6 {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin: 37px 0 56px;
+
+    img {
+      width: 18px;
+      margin: 0 7px 0 19px;
+    }
+
+    small {
+      margin-right: 5px;
+    }
+  }
 `
 
 export const Info = styled.div`
