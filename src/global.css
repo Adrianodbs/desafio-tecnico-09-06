@@ -4,12 +4,3 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-
-:root{
-  --white-1: '#FFFFFF';
-  --white-2: '#FAFAFA';
-  --orange-1: '#FA641E';
-  --orange-2: '#FF671F';
-  --orange-3: '#FF881F';
-
-}

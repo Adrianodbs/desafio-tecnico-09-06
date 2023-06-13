@@ -1,5 +1,6 @@
 import Header from './components/Header'
 import FirstSection from './pages/FirstSection'
+import Footer from './pages/Footer'
 import InfoContainer from './pages/InfoContainer'
 import SecondSection from './pages/SecondSection'
 
@@ -10,6 +11,7 @@ function App() {
       <FirstSection />
       <SecondSection />
       <InfoContainer />
+      <Footer />
     </div>
   )
 }
