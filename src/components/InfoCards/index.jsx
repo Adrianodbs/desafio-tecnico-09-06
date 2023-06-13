@@ -39,13 +39,16 @@ const Card = styled.div`
     color: #333333;
     font-size: 24px;
     font-weight: bold;
+    margin-bottom: 4px;
   }
 
   span {
     color: #666666;
-    margin: 4px 0 20px;
+    margin: 0;
+    margin-bottom: 20px;
     font-size: 16px;
     font-weight: 500;
+    text-align: left;
   }
 
   p {

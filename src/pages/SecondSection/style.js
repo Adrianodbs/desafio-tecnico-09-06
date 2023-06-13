@@ -58,6 +58,7 @@ export const Container = styled.section`
     align-items: center;
     gap: 6px;
     padding: 36px 16px;
+    max-width: 100%;
   }
 
   .line {
