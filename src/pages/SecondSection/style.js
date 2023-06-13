@@ -31,6 +31,7 @@ export const Container = styled.section`
     text-align: center;
     line-height: 40px;
     margin-bottom: 20px;
+    color: #333333;
   }
 
   .cards {
@@ -49,5 +50,24 @@ export const Container = styled.section`
     font-size: 16px;
     text-align: center;
     padding: 0 60px;
+  }
+
+  .lines {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 36px 16px;
+  }
+
+  .line {
+    background-color: #eeeeee;
+    width: 88px;
+    height: 4px;
+    border-radius: 4px;
+  }
+
+  .line.active {
+    background-color: #fa641e;
   }
 `

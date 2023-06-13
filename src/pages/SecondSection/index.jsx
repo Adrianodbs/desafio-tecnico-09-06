@@ -40,6 +40,12 @@ function SecondSection() {
         Tenha todas as funcionalidades Pigz sem taxa de adesão, sem comissão por
         cada venda, sem letrinhas miúdas.
       </span>
+      <div className="lines">
+        <div className="line active"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </div>
     </C.Container>
   )
 }
