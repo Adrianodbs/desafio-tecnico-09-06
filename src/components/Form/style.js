@@ -44,24 +44,45 @@ export const Form = styled.form`
   width: 100%;
   gap: 20px;
 
-  label {
+  .local {
     display: flex;
-    flex-direction: column;
-    gap: 6px;
+    gap: 15px;
+    width: 100%;
+    justify-content: space-between;
 
-    span {
-      color: #333333;
-      font-size: 12px;
+    .state {
+      width: 114px;
+      @media (max-width: 400px) {
+        width: 80px;
+      }
     }
 
-    input {
-      height: 48px;
-      border: 1px solid #999999;
-      border-radius: 12px;
-      padding-left: 16px;
+    .city {
+      width: 205px;
+      @media (max-width: 400px) {
+        width: 150px;
+      }
+    }
+  }
 
-      &::placeholder {
-        color: #cccccc;
+  .address {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+
+    .number {
+      width: 114px;
+      @media (max-width: 400px) {
+        width: 80px;
+      }
+    }
+
+    .complement {
+      width: 205px;
+      @media (max-width: 400px) {
+        width: 150px;
       }
     }
   }
