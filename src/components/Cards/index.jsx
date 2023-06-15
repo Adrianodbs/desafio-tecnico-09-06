@@ -20,6 +20,11 @@ const Container = styled.div`
   width: 100%;
   height: 243px;
   border-radius: 24px;
+  border: 2px solid transparent;
+
+  &:hover {
+    border: 2px solid #cccccc;
+  }
 
   img {
     width: 72px;

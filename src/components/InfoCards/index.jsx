@@ -81,6 +81,12 @@ const Card = styled.div`
     background: linear-gradient(to right, #ff881f, #fa641e);
     border-radius: 36px;
     box-shadow: 0px 10px 10px rgba(250, 100, 30, 0.4);
+    cursor: pointer;
+
+    transition: all 0.2s;
+    &:hover {
+      opacity: 0.8;
+    }
   }
 `
 

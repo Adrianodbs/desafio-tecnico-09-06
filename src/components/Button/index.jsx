@@ -15,4 +15,9 @@ const Button = styled.button`
   font-size: 14px;
   font-weight: 500;
   box-shadow: 0px 10px 10px rgba(250, 100, 30, 0.4);
+
+  transition: all 0.2s;
+  &:hover {
+    opacity: 0.8;
+  }
 `

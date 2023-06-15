@@ -35,6 +35,11 @@ export const Container = styled.div`
     color: #fff;
     font-size: 16px;
     font-weight: 500;
+
+    transition: all 0.2s;
+    &:hover {
+      opacity: 0.8;
+    }
   }
 `
 

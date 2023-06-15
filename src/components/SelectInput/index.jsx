@@ -15,7 +15,7 @@ const Label = styled.label`
     width: 100%;
     border-radius: 12px;
     padding-left: 16px;
-    color: #333333;
+    color: #ccc;
 
     &::placeholder {
       color: #cccccc;
