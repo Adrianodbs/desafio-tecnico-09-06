@@ -51,24 +51,4 @@ export const Container = styled.section`
     text-align: center;
     padding: 0 60px;
   }
-
-  .lines {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
-    padding: 36px 16px;
-    max-width: 100%;
-  }
-
-  .line {
-    background-color: #eeeeee;
-    width: 88px;
-    height: 4px;
-    border-radius: 4px;
-  }
-
-  .line.active {
-    background-color: #fa641e;
-  }
 `

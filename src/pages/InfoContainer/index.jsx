@@ -1,22 +1,68 @@
 import * as C from './style'
 
-import phones from '../../assets/phones.png'
 import whats from '../../assets/whats.png'
+import phones from '../../assets/phones.png'
+import line2 from '../../assets/line2.png'
+import motoboy from '../../assets/motoboy.png'
+import cartao from '../../assets/cartao.png'
 
 import InfoCards from '../../components/InfoCards'
+import InfoText from '../../components/InfoText'
+import { useState } from 'react'
 
 function InfoContainer() {
+  const [line, setLine] = useState(0)
   return (
     <C.Container>
+      <div className="lines">
+        <div
+          onClick={() => setLine(0)}
+          className={`line ${line === 0 ? 'active' : ''}`}
+        ></div>
+        <div
+          onClick={() => setLine(1)}
+          className={`line ${line === 1 ? 'active' : ''}`}
+        ></div>
+        <div
+          onClick={() => setLine(2)}
+          className={`line ${line === 2 ? 'active' : ''}`}
+        ></div>
+        <div
+          onClick={() => setLine(3)}
+          className={`line ${line === 3 ? 'active' : ''}`}
+        ></div>
+      </div>
       <h5>Pigz Marketplace</h5>
-      <C.Info>
-        <p>
-          Além de uma página exclusiva, com o Pigz Marketplace sua loja terá
-          mais visibilidade, no app e no site. Uma vitrine com milhares de
-          clientes todos os dias, pra vender muito mais.
-        </p>
-        <img src={phones} alt="Celulares" />
-      </C.Info>
+      {line === 0 && (
+        <InfoText
+          text="Além de uma página exclusiva, com o Pigz Marketplace sua loja terá mais
+        visibilidade, no app e no site. Uma vitrine com milhares de clientes
+        todos os dias, pra vender muito mais."
+          img={phones}
+        />
+      )}
+
+      {line === 1 && (
+        <InfoText
+          text="Acompanhe suas vendas em tempo real, no computador ou no celular, de onde estiver. Faça alterações de preços e disponibilidade de produtos rapidamente, como deve ser."
+          img={line2}
+        />
+      )}
+
+      {line === 2 && (
+        <InfoText
+          text="A ferramenta ideal pra quem tem entrega própria. Controle de entregas por motoboy, geração de relatórios por entregas e por taxas de entrega, individualmente."
+          img={motoboy}
+        />
+      )}
+
+      {line === 3 && (
+        <InfoText
+          text="Segurança e agilidade para receber e entregar pedidos. Seus clientes pagam com Pix ou cartão de crédito pelo app, e o entregador nem precisa levar a maquininha de cartão."
+          img={cartao}
+        />
+      )}
+
       <h2>E mais: suporte que realmente funciona!</h2>
       <span>
         Respostas automáticas e robôs?

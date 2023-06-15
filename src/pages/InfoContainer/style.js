@@ -47,31 +47,25 @@ export const Container = styled.section`
       margin-right: 5px;
     }
   }
-`
 
-export const Info = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(to bottom, #fa641e, #ff881f);
-  border-radius: 48px;
-  margin-bottom: 80px;
-
-  p {
-    margin: 40px;
-    color: #ffffff;
-    font-size: 15px;
-    text-align: center;
-    font-weight: 200;
+  .lines {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 36px 16px;
+    max-width: 100%;
   }
 
-  img {
-    margin: 0 40px;
-    max-height: 200px;
-    height: 100%;
-    max-width: 382px;
-    width: 100%;
+  .line {
+    background-color: #eeeeee;
+    cursor: pointer;
+    width: 88px;
+    height: 4px;
+    border-radius: 4px;
+  }
+
+  .line.active {
+    background-color: #fa641e;
   }
 `
